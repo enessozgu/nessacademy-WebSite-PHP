@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-// Bağlantı oluşturma
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Bağlantıyı kontrol etme
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 if (isset($_POST["user_name"], $_POST["user_mail"], $_POST["yorum"])) {
     $username = $_POST['user_name'];

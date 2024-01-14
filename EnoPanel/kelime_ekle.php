@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $ingilizce_kelime = $_POST['ingilizce_kelime'];
 
   // Veritabanına ekleme işlemi
-  $ekleme_sorgusu = $db->prepare("INSERT INTO kelimeler (kelime, anlam) VALUES (?, ?)");
+  $ekleme_sorgusu = $conn->prepare("INSERT INTO kelimeler (kelime, anlam) VALUES (?, ?)");
   $ekleme_sorgusu->bind_param('ss', $turkce_kelime, $ingilizce_kelime);
 
   if ($ekleme_sorgusu->execute()) {

@@ -24,7 +24,7 @@ include "ust.php";
 
 
                                 <?php
-                                $Kelimeler = $db->query("SELECT * FROM yorumlar ORDER BY id ");
+                                $Kelimeler = $conn->query("SELECT * FROM yorumlar ORDER BY id ");
                                 foreach ($Kelimeler as $Kelime) {
                                     ?>
                                     <tr>

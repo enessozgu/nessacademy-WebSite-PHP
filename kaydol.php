@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="udemy.php">Ana Sayfa</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Ana Sayfa</a>
                     <a class="nav-link active" href="loginpage.php">Kelime Testi</a>
                     <a class="nav-link active" aria-current="true" href="loginpage.php">Sözlük</a>
                     <a href="loginpage.php" class=""><button
@@ -39,7 +39,7 @@
 
 
     <div class="row w-50 " style="margin:auto;">
-        <div class="container container--xs"><a href="udemy.php"></a><img class="img-fluid mx-auto d-block mb-3"
+        <div class="container container--xs"><a href="index.php"></a><img class="img-fluid mx-auto d-block mb-3"
                 src="5.png" alt="" width="400" height="300">
             <div class="registration-form woocommerce ">
 

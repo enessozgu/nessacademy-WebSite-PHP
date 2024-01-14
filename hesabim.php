@@ -2,18 +2,7 @@
 // Oturumu başlat
 session_start();
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-// Veritabanı bağlantısı oluştur
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Bağlantıyı kontrol et
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 // Kullanıcı oturumda ise
 if (isset($_SESSION['kullanici_adi'])) {
@@ -71,16 +60,7 @@ if (isset($_SESSION['kullanici_adi'])) {
 $userEmail = $_SESSION['kullanici_mail'];
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 
 
@@ -119,17 +99,7 @@ $conn->close();
 
 
 
-// Veritabanı bağlantısı oluştur
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 
 

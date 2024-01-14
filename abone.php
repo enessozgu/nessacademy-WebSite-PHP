@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "37689622Ee88";
-$dbname = "test_db";
-
-// Bağlantı oluşturma
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Bağlantıyı kontrol etme
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 // POST yöntemiyle bir formdan veri geldi mi kontrol et
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

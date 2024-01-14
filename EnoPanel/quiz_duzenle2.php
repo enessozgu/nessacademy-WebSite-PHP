@@ -5,7 +5,7 @@ include 'ust.php';
 if (isset($_GET['id'])) {
     $soru_id = $_GET['id'];
     // Veritabanından belirtilen soruyu al
-    $sorgu = $db->prepare("SELECT * FROM quiz_sorular2 WHERE id = ?");
+    $sorgu = $conn->prepare("SELECT * FROM quiz_sorular2 WHERE id = ?");
     $sorgu->bind_param('i', $soru_id);
     $sorgu->execute();
     $result = $sorgu->get_result();

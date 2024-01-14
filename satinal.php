@@ -1,14 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 // Promo kodunu veritabanından çek
 $sql = "SELECT pr FROM promo";  // 'pr' alanı üzerinden bir filtreleme yapmanız gerekiyor.
@@ -73,7 +64,7 @@ $promoData = $result->fetch_assoc();  // Satırdan veriyi çek
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="udemy.php">Ana Sayfa</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Ana Sayfa</a>
                     <a class="nav-link active" href="loginpage.php">Kelime Testi</a>
                     <a class="nav-link active" aria-current="true" href="loginpage.php">Sözlük</a>
                     <a href="loginpage.php" class=""><button

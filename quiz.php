@@ -52,16 +52,7 @@
 
 <?php
 // Veritabanı bağlantısı oluştur
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 // Soruları veritabanından çekme
 $sql = "SELECT * FROM quiz_questions";

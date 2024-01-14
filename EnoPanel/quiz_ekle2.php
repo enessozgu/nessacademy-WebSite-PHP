@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dogru = $_POST['dogru'];
 
     // Veritabanına ekleme işlemi
-    $ekleme_sorgusu = $db->prepare("INSERT INTO quiz_sorular2 (question_text, option_a, option_b, option_c, option_d, correct_answer) VALUES (?, ?, ?, ?, ?, ?)");
+    $ekleme_sorgusu = $conn->prepare("INSERT INTO quiz_sorular2 (question_text, option_a, option_b, option_c, option_d, correct_answer) VALUES (?, ?, ?, ?, ?, ?)");
     $ekleme_sorgusu->bind_param('ssssss', $soru, $a, $b, $c, $d, $dogru);
 
 

@@ -1,18 +1,7 @@
 <?php
 session_start(); // Session'ı başlat
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-// Bağlantı oluşturma
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Bağlantıyı kontrol etme
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['user_name'];
@@ -99,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Ekleme işlemi başarısız olursa hata mesajını ayarla
         $error_message = "Kayıt işlemi başarısız oldu: " . $conn->error;
         // Hata durumunda kullanıcıyı giriş sayfasında tut
-        header("Location: udemy.php");
+        header("Location: index.php");
         exit();
     }
 }

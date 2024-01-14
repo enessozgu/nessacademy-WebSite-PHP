@@ -28,7 +28,7 @@ include "ust.php";
                             <tbody>
 
                                 <?php
-                                $Kelimeler = $db->query("SELECT * FROM prime_uyeler ORDER BY id ");
+                                $Kelimeler = $conn->query("SELECT * FROM prime_uyeler ORDER BY id ");
                                 foreach ($Kelimeler as $Kelime) {
                                     ?>
                                     <tr>

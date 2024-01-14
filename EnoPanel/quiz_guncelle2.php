@@ -1,16 +1,6 @@
 <?php 
 // Veritabanı bağlantısı oluştur
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPassword = '';
-$dbName = 'test_db';
-
-$db = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
-
-// Bağlantıyı kontrol et
-if ($db->connect_error) {
-    die("Bağlantı hatası: " . $db->connect_error);
-}
+include 'baglanti.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -24,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dogru_secenek = $_POST['dogru'];
 
     // Veritabanında güncelleme sorgusu
-    $sorgu = $db->prepare("UPDATE quiz_sorular2 SET question_text=?, option_a=?, option_b=?, option_c=?, option_d=?, correct_answer=? WHERE id=?");
+    $sorgu = $conn->prepare("UPDATE quiz_sorular2 SET question_text=?, option_a=?, option_b=?, option_c=?, option_d=?, correct_answer=? WHERE id=?");
     $sorgu->bind_param('ssssssi', $soru_metni, $secenek_a, $secenek_b, $secenek_c, $secenek_d, $dogru_secenek, $soru_id);
 
     // Sorguyu çalıştır

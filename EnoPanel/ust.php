@@ -1,17 +1,7 @@
 <?php
 
 // Veritabanı bağlantısı oluştur
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPassword = '';
-$dbName = 'test_db';
-
-$db = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
-
-// Bağlantıyı kontrol et
-if ($db->connect_error) {
-  die("Bağlantı hatası: " . $db->connect_error);
-}
+include 'baglanti.php';
 ?>
 
 

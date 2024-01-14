@@ -1,18 +1,7 @@
 <?php
 session_start(); // Oturumu başlat
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-// Bağlantı oluşturma
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Bağlantıyı kontrol etme
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
+include 'baglanti.php';
 
 // Form gönderildiğinde
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -152,7 +141,7 @@ $conn->close();
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="udemy.php">Ana Sayfa</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Ana Sayfa</a>
                     <a class="nav-link active" href="loginpage.php">Kelime Testi</a>
                     <a class="nav-link active" aria-current="true" href="loginpage.php">Sözlük</a>
                     <a href="loginpage.php" class=""><button
@@ -174,7 +163,7 @@ $conn->close();
 
 
         <form class="form-signin" method="post">
-            <a href="udemy.php"><img class="mb-4" src="5.png" alt="" width="400" height="300"></a>
+            <a href="index.php"><img class="mb-4" src="5.png" alt="" width="400" height="300"></a>
             <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
             <label for="inputEmail" class="sr-only">Email address</label>
             <input type="email" name="user_mail" id="inputEmail" class="form-control" placeholder="Email address"

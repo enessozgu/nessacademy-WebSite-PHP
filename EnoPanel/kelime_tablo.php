@@ -23,7 +23,7 @@ include "ust.php";
               <tbody>
 
                 <?php
-                $Kelimeler = $db->query("SELECT * FROM kelimeler ORDER BY kelime_id ");
+                $Kelimeler = $conn->query("SELECT * FROM kelimeler ORDER BY kelime_id ");
                 foreach ($Kelimeler as $Kelime) {
                   ?>
                   <tr >

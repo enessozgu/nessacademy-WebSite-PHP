@@ -30,7 +30,7 @@ include 'ust.php';
                             </thead>
                             <tbody>
                             <?php
-                          $Kelimeler = $db->query("SELECT * FROM quiz_sorular2 ORDER BY id ");
+                          $Kelimeler = $conn->query("SELECT * FROM quiz_sorular2 ORDER BY id ");
                            foreach ($Kelimeler as $Kelime) {
                              ?>
                                 <tr>

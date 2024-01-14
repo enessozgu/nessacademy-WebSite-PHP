@@ -3,17 +3,7 @@ include 'ust.php';
 ?>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Bağlantı hatası: " . $conn->connect_error);
-}
-
+include 'baglanti.php';
 // Promo kodunu veritabanından çek
 $sql = "SELECT pr FROM promo";  // 'pr' alanı üzerinden bir filtreleme yapmanız gerekiyor.
 $result = $conn->query($sql);

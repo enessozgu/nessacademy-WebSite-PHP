@@ -18,9 +18,6 @@
  
   }
  
-  else{
-     echo"Bağlantı Başarılı";
-  }
 
 
  

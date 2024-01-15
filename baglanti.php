@@ -11,9 +11,9 @@ $username = "nese7cademcomtr_enes";
 $password = "rT-XR8l2%gkG";
 $dbname = "nese7cademcomtr_db";
 
- $baglan=mysqli_connect($servername,$username,$password,$dbname);
+ $conn=mysqli_connect($servername,$username,$password,$dbname);
 
- if(!$baglan){
+ if(!$conn){
     die("Bağlantı Kurulamadı :" .mysqli_connect_error());
 
  }

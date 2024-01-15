@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="udemy--.php">Ana Sayfa</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Ana Sayfa</a>
 
                     <a class="nav-link active" href="loginpage.php">Kelime Testi</a>
                     <a class="nav-link active" href="loginpage.php">Sözlük</a>

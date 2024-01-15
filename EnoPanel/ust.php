@@ -9,7 +9,7 @@ include 'baglanti.php';
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
   <!-- Required meta tags -->

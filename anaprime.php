@@ -28,7 +28,7 @@
                     <?php
                     session_start();
 
-                    if (isset($_SESSION['kullanici_mail']) && $_SESSION['kullanici_mail'] == 'ozguenes196@gmail.com') {
+                    if (isset($_SESSION['kullanici_mail']) && $_SESSION['kullanici_mail'] == 'meslinakzlts7@gmail.com') {
                         echo '<a class="nav-link active" href="EnoPanel/prime_uyeler.php">Admin Panel</a>';
                     } else {
                        

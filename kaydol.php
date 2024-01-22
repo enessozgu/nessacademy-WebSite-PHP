@@ -151,7 +151,7 @@ session_start(); // Session'ı başlat
 include 'baglanti.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if ($_POST['sumbit']) {
+    if ($_POST['submit']) {
         $username = $_POST['user_name'];
         $lastname = $_POST['user_lastname'];
         $email = $_POST['user_mail'];

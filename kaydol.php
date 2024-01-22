@@ -43,7 +43,8 @@
                 src="5.png" alt="" width="400" height="300">
             <div class="registration-form woocommerce ">
 
-                <form action="kayitdeneme.php" name="yarak" method="post" enctype="multipart/form-data" class="register">
+                <form action="udemy--php" name="yarak" method="post" enctype="multipart/form-data" class="register">
+                    <?php include 'kayitdeneme.php';  ?>
 
                     <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
                         <label for="reg_sr_firstname">First Name <span class="required">*</span></label>

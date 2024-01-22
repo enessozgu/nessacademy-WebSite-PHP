@@ -43,7 +43,7 @@
                 src="5.png" alt="" width="400" height="300">
             <div class="registration-form woocommerce ">
 
-                <form action="udemy--php" name="yarak" method="post" enctype="multipart/form-data" class="register">
+                <form action="" name="yarak" method="post" enctype="multipart/form-data" class="register">
 
 
                     <p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">

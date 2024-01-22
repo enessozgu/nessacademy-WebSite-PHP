@@ -52,7 +52,6 @@
                         <li>10 users included</li>
                         <li>2 GB of storage</li>
                         <li>Email support</li>
-                        <li>Help center access</li>
                     </ul>
 
                     <a href="kaydol.php" class=""> <button type="button"

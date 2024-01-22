@@ -55,7 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Veritabanında fotoğraf yolu bulunamadı.";
             }
 
-            header("Location: udemy--.php");
             exit();
         } else {
             // Ekleme işlemi başarısız olursa hata mesajını ayarla

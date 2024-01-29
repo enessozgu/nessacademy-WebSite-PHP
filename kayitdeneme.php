@@ -4,7 +4,7 @@ session_start(); // Session'ı başlat
 include 'baglanti.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if ($_POST['sumbit']) {
+
         $username = $_POST['user_name'];
         $lastname = $_POST['user_lastname'];
         $email = $_POST['user_mail'];
@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Şifreyi güvenli bir şekilde hash'leme
         $hashed_password = password_hash($user_password, PASSWORD_DEFAULT);
 
+        
         // Veritabanına kullanıcı bilgilerini ekleme
         $sql = "INSERT INTO users (user_name, last_name, user_mail, user_number, password) VALUES ('$username', '$lastname', '$email', '$number', '$hashed_password')";
 
@@ -64,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         }
     }
-}
+
 
 // Bağlantıyı kapat
 $conn->close();

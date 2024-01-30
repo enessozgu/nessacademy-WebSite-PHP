@@ -7,9 +7,9 @@
 // $dbname = "nese7cademcomtr_db";
  
  $servername = "localhost";
-$username = "nese7cademcomtr_enes";
-$password = "rT-XR8l2%gkG";
-$dbname = "nese7cademcomtr_db";
+$username = "root";
+$password = "";
+$dbname = "test";
 
  $conn=mysqli_connect($servername,$username,$password,$dbname);
 

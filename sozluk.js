@@ -1,1 +1,0 @@
-document.querySelector("body > div.pr.pg-h.fon > div.bh.pr.lbt.lb-ch.lmb-15.z2.pg-hh")
